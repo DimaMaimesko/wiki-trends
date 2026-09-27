@@ -1,0 +1,384 @@
+{
+ "analyzed_at": "2026-09-24T17:16:16.431361Z",
+ "comparison": {
+  "metric": "share",
+  "notes": [
+   "The opportunity score mixes current attention share, growth and reliability using the weights shown. It is a shortlisting aid, not a forecast.",
+   "Scores are relative within this run only: adding or removing a language edition changes every score.",
+   "Wikipedia attention is not willingness to pay. Use this to choose what to validate next, not what to build."
+  ],
+  "ranking": [
+   {
+    "abs_growth_pct_per_year": -50.01841482361748,
+    "grade": "D",
+    "growth_pct_per_year": -42.37512548256673,
+    "level_per_million": 1.7588078440377037,
+    "opportunity_score": null,
+    "p_value_adjusted": 0.0004899707526038188,
+    "rationale": "not rankable: only 9.2 views/day on average (floor is 10): day-to-day counts at this level are dominated by noise, and a % change is not measurable",
+    "wiki": "cs",
+    "wiki_growth_pct_per_year": -12.414480230277015,
+    "yoy_pct": -49.56034968864535
+   },
+   {
+    "abs_growth_pct_per_year": -36.8301117328589,
+    "grade": "D",
+    "growth_pct_per_year": -29.617252144540963,
+    "level_per_million": 0.9501252915896893,
+    "opportunity_score": null,
+    "p_value_adjusted": 0.0001855517028857001,
+    "rationale": "not rankable: only 8.0 views/day on average (floor is 10): day-to-day counts at this level are dominated by noise, and a % change is not measurable",
+    "wiki": "pl",
+    "wiki_growth_pct_per_year": -8.691159054861009,
+    "yoy_pct": -30.70816043831559
+   }
+  ],
+  "weights": {
+   "growth": 0.35,
+   "level": 0.45,
+   "reliability": 0.2
+  }
+ },
+ "limitations": [
+  "Wikipedia pageviews measure curiosity, not purchase intent. A rising article is a reason to run a landing-page or ad test, not evidence of a market.",
+  "Counts use agent=user and access=all-access. Wikimedia's bot filtering is best-effort and its accuracy has changed over time, which can create step changes unrelated to demand.",
+  "Views are counted per article title. Page moves, merges and redirect changes can shift traffic between titles without any change in interest.",
+  "Each language edition is read by a different and not strictly national audience: many speakers of smaller languages read the English, Russian or German editions instead, which understates their home edition.",
+  "Share of a wiki's total pageviews is the default metric. It controls for wiki-wide traffic changes, but it falls when the wiki grows for unrelated reasons.",
+  "2 language editions were tested, so p-values are Benjamini-Hochberg adjusted for multiple comparisons.",
+  "Only the canonical article title was counted. Traffic arriving through redirects is excluded; re-run with --include-redirects to include it."
+ ],
+ "options": {
+  "alpha": 0.05,
+  "metric": "share",
+  "min_daily_views": 10,
+  "spike_policy": "both",
+  "spike_z": 4,
+  "weights": {
+   "growth": 0.35,
+   "level": 0.45,
+   "reliability": 0.2
+  }
+ },
+ "params": {
+  "access": "all-access",
+  "agent": "user",
+  "include_redirects": false
+ },
+ "schema": "wikitrends/analysis/1",
+ "topic": {
+  "description_en": "a diet that cycles between a period of fasting and non-fasting",
+  "label_en": "intermittent fasting",
+  "qid": "Q1666254",
+  "query": "intermittent fasting"
+ },
+ "wikis": [
+  {
+   "absolute": {
+    "ci_high_pct": -44.298303765668955,
+    "ci_low_pct": -55.15111701025235,
+    "direction": "falling",
+    "growth_ex_spikes_pct_per_year": -49.046170697660415,
+    "growth_pct_per_year": -50.01841482361748,
+    "mann_kendall_p": 0.000014822155723903663,
+    "mann_kendall_tau": -0.6521739130434783,
+    "n": 731,
+    "nw_lag": 6,
+    "p_value": 0,
+    "p_value_adjusted": 0.000014822155723903663,
+    "r2": 0.3106606821931178,
+    "spike_dependent": false,
+    "stderr_kind": "newey-west-hac",
+    "theil_sen_pct_per_year": -48.43084713129284,
+    "yoy_comparable": true,
+    "yoy_pct": -54.54152249134947,
+    "yoy_prior_mean": 12.668493150684931,
+    "yoy_recent_mean": 5.758904109589041
+   },
+   "articles": [
+    {
+     "created_at": "2020-10-28",
+     "qid": "Q1666254",
+     "title": "Přerušovaný půst",
+     "url": "https://cs.wikipedia.org/wiki/P%C5%99eru%C5%A1ovan%C3%BD_p%C5%AFst"
+    }
+   ],
+   "coverage": {
+    "before_create": 0,
+    "completeness": 1,
+    "days": 731,
+    "gaps": 0,
+    "observed": 728,
+    "zero_filled": 3
+   },
+   "events": {
+    "level_shifts": [
+     {
+      "after": 0,
+      "before": 0,
+      "date": "2025-12-23",
+      "ratio_pct": 74.89204048515678
+     }
+    ],
+    "spike_days": 6,
+    "spike_view_share": 0.14943553178847296,
+    "top_spikes": [
+     {
+      "baseline": 14,
+      "date": "2025-04-14",
+      "views": 508,
+      "z": 8.263197421305522
+     },
+     {
+      "baseline": 6,
+      "date": "2025-08-15",
+      "views": 164,
+      "z": 7.4089240530794775
+     },
+     {
+      "baseline": 5,
+      "date": "2025-09-24",
+      "views": 77,
+      "z": 6.013703340597323
+     },
+     {
+      "baseline": 14,
+      "date": "2024-10-17",
+      "views": 110,
+      "z": 4.692609984048329
+     }
+    ]
+   },
+   "level": {
+    "last90_mean_daily": 2.933333333333333,
+    "last90_per_million": 1.7588078440377037,
+    "mean_daily": 9.209302325581396,
+    "mean_per_million": 4.304882353920909,
+    "median_daily": 6,
+    "total_views": 6732
+   },
+   "project": "cs.wikipedia",
+   "project_trend": {
+    "ci_high_pct": -10.881264687419401,
+    "ci_low_pct": -13.921318043551567,
+    "direction": "falling",
+    "growth_ex_spikes_pct_per_year": -12.414480230277015,
+    "growth_pct_per_year": -12.414480230277015,
+    "mann_kendall_p": 0.00003008102090995557,
+    "mann_kendall_tau": -0.6284584980237155,
+    "n": 731,
+    "nw_lag": 6,
+    "p_value": 0,
+    "r2": 0.47258595264114966,
+    "spike_dependent": false,
+    "stderr_kind": "newey-west-hac",
+    "theil_sen_pct_per_year": -12.792936262570187,
+    "yoy_comparable": true,
+    "yoy_pct": -12.718444246365845,
+    "yoy_prior_mean": 2226679.4219178082,
+    "yoy_recent_mean": 1943480.4410958905
+   },
+   "reliability": {
+    "blockers": [
+     "only 9.2 views/day on average (floor is 10): day-to-day counts at this level are dominated by noise, and a % change is not measurable"
+    ],
+    "grade": "D",
+    "reasons": [
+     "low volume (9 views/day): percentage changes are unstable at this scale",
+     "a persistent 75% level shift around 2025-12-23 remains after trend and seasonality: check the article history for a page move, merge or redirect change before reading this as demand"
+    ],
+    "score": 0
+   },
+   "seasonality": {
+    "annual_amplitude": 1.9097522645663816,
+    "annual_consistency": 0.3813110436897385,
+    "confidence": "low",
+    "has_annual": true,
+    "monthly_index": [
+     1.4965148719016885,
+     1.0106831467926771,
+     1.1972855738658428,
+     1.2420108298875048,
+     0.9096304076198517,
+     1.007490793987738,
+     0.7836172783601748,
+     0.9164338394769063,
+     0.9147475971323288,
+     0.9023294613536388,
+     0.7986755354697042,
+     0.8205806641519459
+    ],
+    "school_pattern": false,
+    "weekly_amplitude": 1.2690436820728515,
+    "years_covered": 2.001368925393566
+   },
+   "share": {
+    "ci_high_pct": -35.24834808433439,
+    "ci_low_pct": -48.71750658230606,
+    "direction": "falling",
+    "growth_ex_spikes_pct_per_year": -41.25457088963407,
+    "growth_pct_per_year": -42.37512548256673,
+    "mann_kendall_p": 0.0004899707526038188,
+    "mann_kendall_tau": -0.525691699604743,
+    "n": 731,
+    "nw_lag": 6,
+    "p_value": 0,
+    "p_value_adjusted": 0.0004899707526038188,
+    "r2": 0.20745373675077228,
+    "spike_dependent": false,
+    "stderr_kind": "newey-west-hac",
+    "theil_sen_pct_per_year": -43.40224496959305,
+    "yoy_comparable": true,
+    "yoy_pct": -49.56034968864535,
+    "yoy_prior_mean": 5.725389862392765,
+    "yoy_recent_mean": 2.8878666255526597
+   },
+   "status": "ok",
+   "verdict": "Not measurable: only 9.2 views/day on average (floor is 10): day-to-day counts at this level are dominated by noise, and a % change is not measurable. Treat this edition as unmeasured, not as flat — the point estimate below is reported for context only and must not be quoted as a growth rate.",
+   "wiki": "cs"
+  },
+  {
+   "absolute": {
+    "ci_high_pct": -30.003714857795906,
+    "ci_low_pct": -42.99076335871048,
+    "direction": "falling",
+    "growth_ex_spikes_pct_per_year": -36.8301117328589,
+    "growth_pct_per_year": -36.8301117328589,
+    "mann_kendall_p": 0.000014822155723903663,
+    "mann_kendall_tau": -0.6521739130434783,
+    "n": 731,
+    "nw_lag": 6,
+    "p_value": 0,
+    "p_value_adjusted": 0.000014822155723903663,
+    "r2": 0.22853485906352278,
+    "spike_dependent": false,
+    "stderr_kind": "newey-west-hac",
+    "theil_sen_pct_per_year": -36.22026686952273,
+    "yoy_comparable": true,
+    "yoy_pct": -37.96940194714882,
+    "yoy_prior_mean": 9.849315068493151,
+    "yoy_recent_mean": 6.109589041095891
+   },
+   "articles": [
+    {
+     "created_at": "2004-08-06",
+     "qid": "Q352490",
+     "title": "Głodówka lecznicza",
+     "url": "https://pl.wikipedia.org/wiki/G%C5%82od%C3%B3wka_lecznicza"
+    }
+   ],
+   "coverage": {
+    "before_create": 0,
+    "completeness": 1,
+    "days": 731,
+    "gaps": 0,
+    "observed": 730,
+    "zero_filled": 1
+   },
+   "events": {
+    "level_shifts": [
+     {
+      "after": 0,
+      "before": 0,
+      "date": "2024-12-29",
+      "ratio_pct": 44.16153792805459
+     }
+    ],
+    "spike_days": 0,
+    "spike_view_share": 0
+   },
+   "level": {
+    "last90_mean_daily": 5.411111111111111,
+    "last90_per_million": 0.9501252915896893,
+    "mean_daily": 7.972640218878249,
+    "mean_per_million": 1.220214140745993,
+    "median_daily": 7,
+    "total_views": 5828
+   },
+   "project": "pl.wikipedia",
+   "project_trend": {
+    "ci_high_pct": -7.071414813719756,
+    "ci_low_pct": -10.28267117128573,
+    "direction": "falling",
+    "growth_ex_spikes_pct_per_year": -8.691159054861009,
+    "growth_pct_per_year": -8.691159054861009,
+    "mann_kendall_p": 0.0002677632428869092,
+    "mann_kendall_tau": -0.549407114624506,
+    "n": 731,
+    "nw_lag": 6,
+    "p_value": 0,
+    "r2": 0.3086999240299688,
+    "spike_dependent": false,
+    "stderr_kind": "newey-west-hac",
+    "theil_sen_pct_per_year": -9.719377555987819,
+    "yoy_comparable": true,
+    "yoy_pct": -9.400311189563205,
+    "yoy_prior_mean": 6779383.610958904,
+    "yoy_recent_mean": 6142100.4547945205
+   },
+   "reliability": {
+    "blockers": [
+     "only 8.0 views/day on average (floor is 10): day-to-day counts at this level are dominated by noise, and a % change is not measurable"
+    ],
+    "grade": "D",
+    "reasons": [
+     "low volume (8 views/day): percentage changes are unstable at this scale",
+     "a persistent 44% level shift around 2024-12-29 remains after trend and seasonality: check the article history for a page move, merge or redirect change before reading this as demand"
+    ],
+    "score": 0
+   },
+   "seasonality": {
+    "annual_amplitude": 0,
+    "annual_consistency": 0.1127341194127738,
+    "confidence": "none",
+    "has_annual": false,
+    "monthly_index": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "school_pattern": false,
+    "weekly_amplitude": 1.1849646226415096,
+    "years_covered": 2.001368925393566
+   },
+   "share": {
+    "ci_high_pct": -22.63610129105391,
+    "ci_low_pct": -35.96843904775585,
+    "direction": "falling",
+    "growth_ex_spikes_pct_per_year": -29.617252144540963,
+    "growth_pct_per_year": -29.617252144540963,
+    "mann_kendall_p": 0.00009277585144285005,
+    "mann_kendall_tau": -0.5889328063241107,
+    "n": 731,
+    "nw_lag": 6,
+    "p_value": 3.361755318564974e-13,
+    "p_value_adjusted": 0.0001855517028857001,
+    "r2": 0.1500365729990062,
+    "spike_dependent": false,
+    "stderr_kind": "newey-west-hac",
+    "theil_sen_pct_per_year": -29.646653059290507,
+    "yoy_comparable": true,
+    "yoy_pct": -30.70816043831559,
+    "yoy_prior_mean": 1.442734619428176,
+    "yoy_recent_mean": 0.9996973577950499
+   },
+   "status": "ok",
+   "verdict": "Not measurable: only 8.0 views/day on average (floor is 10): day-to-day counts at this level are dominated by noise, and a % change is not measurable. Treat this edition as unmeasured, not as flat — the point estimate below is reported for context only and must not be quoted as a growth rate.",
+   "wiki": "pl"
+  }
+ ],
+ "window": {
+  "end": "2026-09-21",
+  "granularity": "daily",
+  "start": "2024-09-21"
+ }
+}

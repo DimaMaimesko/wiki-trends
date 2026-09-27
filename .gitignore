@@ -1,0 +1,7 @@
+# Run outputs. Generated artifacts belong to the user, not the repository —
+# except examples/, which is committed so the deliverable can be reviewed
+# without running anything.
+/runs/
+/wikitrends-runs/
+/.cache/
+ROADMAP.md
