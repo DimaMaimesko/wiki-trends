@@ -65,7 +65,7 @@
 **Для всіх проєктів на машині.** Склонувати репозиторій і зробити симлінк у `~/.claude/skills`. Навичку буде видно в кожному проєкті, відкритому в Claude Code:
 
 ```bash
-git clone <url-репозиторію> wiki-trends
+git clone https://github.com/DimaMaimesko/wiki-trends.git wiki-trends
 cd wiki-trends
 mkdir -p ~/.claude/skills
 ln -s "$PWD" ~/.claude/skills/wiki-trends
@@ -83,7 +83,7 @@ ln -s /шлях/до/wiki-trends .claude/skills/wiki-trends
 
 ```bash
 # з кореня проєкту
-git submodule add <url-репозиторію> .claude/skills/wiki-trends
+git submodule add https://github.com/DimaMaimesko/wiki-trends.git .claude/skills/wiki-trends
 ```
 
 Після цього агент сам побачить навичку за її описом і ввімкне, коли питання стосується інтересу до теми, вибору мови чи ринку. Перевірити можна в новій сесії Claude Code запитом на кшталт «чи росте інтерес до астрономії в українській Вікіпедії». Якщо симлінк уже існує, `ln -s` поверне помилку «File exists». Тоді навичку вже підключено.
