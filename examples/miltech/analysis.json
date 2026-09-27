@@ -1,0 +1,806 @@
+{
+ "analyzed_at": "2026-09-25T21:44:51.705919Z",
+ "comparison": {
+  "metric": "share",
+  "notes": [
+   "No edition shows growing attention share for this topic in this window. The ranking therefore reflects current audience size, not momentum: read it as \"where the existing interest is\", not \"where interest is emerging\".",
+   "The opportunity score mixes current attention share, growth and reliability using the weights shown. It is a shortlisting aid, not a forecast.",
+   "Scores are relative within this run only: adding or removing a language edition changes every score.",
+   "Wikipedia attention is not willingness to pay. Use this to choose what to validate next, not what to build."
+  ],
+  "ranking": [
+   {
+    "abs_growth_pct_per_year": -56.77011507811017,
+    "grade": "B",
+    "growth_pct_per_year": -44.73754232009188,
+    "level_per_million": 3.2767094436853275,
+    "opportunity_score": 0.5700000000000001,
+    "p_value_adjusted": 6.782590489251561e-9,
+    "rationale": "3.3 views per million pageviews in the last 90 days; falling -45%/yr; -46% year over year; reliability B",
+    "wiki": "uk",
+    "wiki_growth_pct_per_year": -23.013760484408675,
+    "yoy_pct": -46.123416936422714
+   },
+   {
+    "abs_growth_pct_per_year": -7.734282417600047,
+    "grade": "B",
+    "growth_pct_per_year": -3.0141040550279885,
+    "level_per_million": 0.7539469388334038,
+    "opportunity_score": 0.47000000000000003,
+    "p_value_adjusted": 0.8233490121001953,
+    "rationale": "0.8 views per million pageviews in the last 90 days; no clear direction; +1% year over year; reliability B",
+    "wiki": "de",
+    "wiki_growth_pct_per_year": -6.996003183698241,
+    "yoy_pct": 1.290386426486756
+   },
+   {
+    "abs_growth_pct_per_year": -17.79946154794798,
+    "grade": "D",
+    "growth_pct_per_year": 6.661747269753526,
+    "level_per_million": 0.532449155896868,
+    "opportunity_score": null,
+    "p_value_adjusted": null,
+    "rationale": "not rankable: only 1.2 views/day on average (floor is 10): day-to-day counts at this level are dominated by noise, and a % change is not measurable",
+    "wiki": "cs",
+    "wiki_growth_pct_per_year": -12.461656021099776,
+    "yoy_pct": null
+   },
+   {
+    "abs_growth_pct_per_year": -52.48455901981514,
+    "grade": "D",
+    "growth_pct_per_year": -43.29939011735144,
+    "level_per_million": 0.24252939317298766,
+    "opportunity_score": null,
+    "p_value_adjusted": 0.000016972964041905847,
+    "rationale": "not rankable: only 9.7 views/day on average (floor is 10): day-to-day counts at this level are dominated by noise, and a % change is not measurable",
+    "wiki": "es",
+    "wiki_growth_pct_per_year": -20.046312926528785,
+    "yoy_pct": -43.16099131536909
+   },
+   {
+    "abs_growth_pct_per_year": -15.669266413365236,
+    "grade": "D",
+    "growth_pct_per_year": -12.207150233702912,
+    "level_per_million": 0.039449347903844544,
+    "opportunity_score": null,
+    "p_value_adjusted": null,
+    "rationale": "not rankable: only 0.9 views/day on average (floor is 10): day-to-day counts at this level are dominated by noise, and a % change is not measurable",
+    "wiki": "it",
+    "wiki_growth_pct_per_year": -12.236989497571438,
+    "yoy_pct": -25.775092086450925
+   }
+  ],
+  "weights": {
+   "growth": 0.35,
+   "level": 0.45,
+   "reliability": 0.2
+  }
+ },
+ "limitations": [
+  "Wikipedia pageviews measure curiosity, not purchase intent. A rising article is a reason to run a landing-page or ad test, not evidence of a market.",
+  "Counts use agent=user and access=all-access. Wikimedia's bot filtering is best-effort and its accuracy has changed over time, which can create step changes unrelated to demand.",
+  "Views are counted per article title. Page moves, merges and redirect changes can shift traffic between titles without any change in interest.",
+  "Each language edition is read by a different and not strictly national audience: many speakers of smaller languages read the English, Russian or German editions instead, which understates their home edition.",
+  "Share of a wiki's total pageviews is the default metric. It controls for wiki-wide traffic changes, but it falls when the wiki grows for unrelated reasons.",
+  "5 language editions were tested, so p-values are Benjamini-Hochberg adjusted for multiple comparisons.",
+  "Only the canonical article title was counted. Traffic arriving through redirects is excluded; re-run with --include-redirects to include it."
+ ],
+ "options": {
+  "alpha": 0.05,
+  "metric": "share",
+  "min_daily_views": 10,
+  "spike_policy": "both",
+  "spike_z": 4,
+  "weights": {
+   "growth": 0.35,
+   "level": 0.45,
+   "reliability": 0.2
+  }
+ },
+ "params": {
+  "access": "all-access",
+  "agent": "user",
+  "include_redirects": false
+ },
+ "schema": "wikitrends/analysis/1",
+ "topic": {
+  "description_en": "application of technology for use in warfare",
+  "label_en": "military technology",
+  "qid": "Q329864",
+  "query": ""
+ },
+ "wikis": [
+  {
+   "absolute": {
+    "ci_high_pct": 392.1144357356517,
+    "ci_low_pct": -86.2695990380642,
+    "direction": "unclear",
+    "growth_ex_spikes_pct_per_year": -17.79946154794798,
+    "growth_pct_per_year": -17.79946154794798,
+    "mann_kendall_p": null,
+    "mann_kendall_tau": null,
+    "n": 114,
+    "nw_lag": 4,
+    "p_value": 0.8300186196764379,
+    "r2": 0.0010130164086211702,
+    "spike_dependent": false,
+    "stderr_kind": "newey-west-hac",
+    "theil_sen_pct_per_year": null,
+    "yoy_comparable": false,
+    "yoy_pct": null,
+    "yoy_prior_mean": null,
+    "yoy_recent_mean": null
+   },
+   "articles": [
+    {
+     "created_at": "2026-05-13",
+     "qid": "Q329864",
+     "title": "Vojenská technika",
+     "url": "https://cs.wikipedia.org/wiki/Vojensk%C3%A1_technika"
+    }
+   ],
+   "coverage": {
+    "before_create": 598,
+    "completeness": 1,
+    "days": 731,
+    "gaps": 0,
+    "observed": 113,
+    "zero_filled": 20
+   },
+   "events": {
+    "level_shifts": [
+     {
+      "after": 0,
+      "before": 0,
+      "date": "2026-05-21",
+      "ratio_pct": -75.18670926606636
+     }
+    ],
+    "spike_days": 0,
+    "spike_view_share": 0
+   },
+   "level": {
+    "last90_mean_daily": 0.8888888888888888,
+    "last90_per_million": 0.532449155896868,
+    "mean_daily": 1.150375939849624,
+    "mean_per_million": 0.6453210620159652,
+    "median_daily": 1,
+    "total_views": 153
+   },
+   "note": "article created 2026-05-13, after more than half of the requested window",
+   "project": "cs.wikipedia",
+   "project_trend": {
+    "ci_high_pct": -10.928269292968196,
+    "ci_low_pct": -13.968645206045128,
+    "direction": "falling",
+    "growth_ex_spikes_pct_per_year": -12.461656021099776,
+    "growth_pct_per_year": -12.461656021099776,
+    "mann_kendall_p": 0.000007135806618485674,
+    "mann_kendall_tau": -0.6594202898550725,
+    "n": 731,
+    "nw_lag": 6,
+    "p_value": 0,
+    "r2": 0.47517533080338537,
+    "spike_dependent": false,
+    "stderr_kind": "newey-west-hac",
+    "theil_sen_pct_per_year": -12.813298749069135,
+    "yoy_comparable": true,
+    "yoy_pct": -12.762846451372845,
+    "yoy_prior_mean": 2226489.495890411,
+    "yoy_recent_mean": 1942326.0602739726
+   },
+   "reliability": {
+    "blockers": [
+     "only 1.2 views/day on average (floor is 10): day-to-day counts at this level are dominated by noise, and a % change is not measurable",
+     "only 114 usable days: too short for any trend claim",
+     "the article did not exist for most of the window, so early days measure its absence, not low interest"
+    ],
+    "grade": "D",
+    "reasons": [
+     "low volume (1 views/day): percentage changes are unstable at this scale",
+     "no aligned year-over-year comparison is possible in this window",
+     "the 95% confidence interval spans zero (-83% to 574% per year): the direction itself is uncertain",
+     "absolute views move one way (-18%/yr) and share of the wiki's traffic the other (7%/yr): the wiki's own traffic changed by -12%/yr, so pick the metric that matches your question",
+     "a persistent -75% level shift around 2026-05-21 remains after trend and seasonality: check the article history for a page move, merge or redirect change before reading this as demand",
+     "the article was created inside the window (598 days precede it and are excluded)"
+    ],
+    "score": 0
+   },
+   "seasonality": {
+    "annual_amplitude": 0,
+    "annual_consistency": 0,
+    "confidence": "none",
+    "has_annual": false,
+    "monthly_index": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "school_pattern": false,
+    "weekly_amplitude": null,
+    "years_covered": 2.001368925393566
+   },
+   "share": {
+    "ci_high_pct": 574.1180753707823,
+    "ci_low_pct": -83.12353763192112,
+    "direction": "flat",
+    "growth_ex_spikes_pct_per_year": 6.661747269753526,
+    "growth_pct_per_year": 6.661747269753526,
+    "mann_kendall_p": null,
+    "mann_kendall_tau": null,
+    "n": 114,
+    "nw_lag": 4,
+    "p_value": 0.9453406768808545,
+    "r2": 0.00009790626403460845,
+    "spike_dependent": false,
+    "stderr_kind": "newey-west-hac",
+    "theil_sen_pct_per_year": null,
+    "yoy_comparable": false,
+    "yoy_pct": null,
+    "yoy_prior_mean": null,
+    "yoy_recent_mean": null
+   },
+   "status": "too_new",
+   "verdict": "Not measurable: only 1.2 views/day on average (floor is 10): day-to-day counts at this level are dominated by noise, and a % change is not measurable. Treat this edition as unmeasured, not as flat — the point estimate below is reported for context only and must not be quoted as a growth rate.",
+   "wiki": "cs"
+  },
+  {
+   "absolute": {
+    "ci_high_pct": -53.91777012320445,
+    "ci_low_pct": -59.445908859960085,
+    "direction": "falling",
+    "growth_ex_spikes_pct_per_year": -56.77011507811017,
+    "growth_pct_per_year": -56.77011507811017,
+    "mann_kendall_p": 3.4848124386144264e-10,
+    "mann_kendall_tau": -0.9202898550724637,
+    "n": 731,
+    "nw_lag": 6,
+    "p_value": 0,
+    "p_value_adjusted": 1.045443731584328e-9,
+    "r2": 0.61431875316168,
+    "spike_dependent": false,
+    "stderr_kind": "newey-west-hac",
+    "theil_sen_pct_per_year": -55.448462599657724,
+    "yoy_comparable": true,
+    "yoy_pct": -60.38175724901647,
+    "yoy_prior_mean": 18.802739726027397,
+    "yoy_recent_mean": 7.449315068493151
+   },
+   "articles": [
+    {
+     "created_at": "2009-05-26",
+     "qid": "Q329864",
+     "title": "Військова техніка",
+     "url": "https://uk.wikipedia.org/wiki/%D0%92%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D0%BE%D0%B2%D0%B0_%D1%82%D0%B5%D1%85%D0%BD%D1%96%D0%BA%D0%B0"
+    }
+   ],
+   "coverage": {
+    "before_create": 0,
+    "completeness": 1,
+    "days": 731,
+    "gaps": 0,
+    "observed": 731,
+    "zero_filled": 0
+   },
+   "events": {
+    "spike_days": 0,
+    "spike_view_share": 0
+   },
+   "level": {
+    "last90_mean_daily": 5.533333333333333,
+    "last90_per_million": 3.2767094436853275,
+    "mean_daily": 13.12859097127223,
+    "mean_per_million": 5.713396048227927,
+    "median_daily": 10,
+    "total_views": 9597
+   },
+   "project": "uk.wikipedia",
+   "project_trend": {
+    "ci_high_pct": -21.06151178746186,
+    "ci_low_pct": -24.91772760083587,
+    "direction": "falling",
+    "growth_ex_spikes_pct_per_year": -23.013760484408675,
+    "growth_pct_per_year": -23.013760484408675,
+    "mann_kendall_p": 2.8287791442593857e-7,
+    "mann_kendall_tau": -0.7536231884057971,
+    "n": 731,
+    "nw_lag": 6,
+    "p_value": 0,
+    "r2": 0.6635936034908987,
+    "spike_dependent": false,
+    "stderr_kind": "newey-west-hac",
+    "theil_sen_pct_per_year": -22.35774283355626,
+    "yoy_comparable": true,
+    "yoy_pct": -24.46928592448787,
+    "yoy_prior_mean": 2442313.8602739726,
+    "yoy_recent_mean": 1844697.098630137
+   },
+   "reliability": {
+    "grade": "B",
+    "reasons": [
+     "low volume (13 views/day): percentage changes are unstable at this scale",
+     "the window average clears the volume floor but the last 90 days average only 6 views/day: the trend is measurable historically, the current level is not",
+     "uk.wikipedia's overall traffic itself moved -23%/yr in this window"
+    ],
+    "score": 0.6
+   },
+   "seasonality": {
+    "annual_amplitude": 1.7112700517219182,
+    "annual_consistency": 0.5840272526887126,
+    "confidence": "low",
+    "has_annual": true,
+    "monthly_index": [
+     1.0414290465379579,
+     1.0687833158655533,
+     1.0475667099209187,
+     1.0081912305952265,
+     0.8955781919387981,
+     0.7300687656048077,
+     0.8849400502015531,
+     0.8688019334744576,
+     1.1045008239970464,
+     1.0889747219093542,
+     1.2493448142770962,
+     1.01182039567723
+    ],
+    "school_pattern": false,
+    "weekly_amplitude": 1.5782241871603575,
+    "years_covered": 2.001368925393566
+   },
+   "share": {
+    "ci_high_pct": -41.44481189000538,
+    "ci_low_pct": -47.845112834632545,
+    "direction": "falling",
+    "growth_ex_spikes_pct_per_year": -44.73754232009188,
+    "growth_pct_per_year": -44.73754232009188,
+    "mann_kendall_p": 2.260863496417187e-9,
+    "mann_kendall_tau": -0.8768115942028986,
+    "n": 731,
+    "nw_lag": 6,
+    "p_value": 0,
+    "p_value_adjusted": 6.782590489251561e-9,
+    "r2": 0.44947829182929155,
+    "spike_dependent": false,
+    "stderr_kind": "newey-west-hac",
+    "theil_sen_pct_per_year": -42.82318460668506,
+    "yoy_comparable": true,
+    "yoy_pct": -46.123416936422714,
+    "yoy_prior_mean": 7.425154946083614,
+    "yoy_recent_mean": 4.0004197721260555
+   },
+   "status": "ok",
+   "verdict": "Interest is declining: -45%/yr in share of the wiki's pageviews (95% CI -48% to -41%). Aligned year-over-year: -46%. Baseline 6 views/day (3.3 per million pageviews). Reliability B. Against its own edition: absolute views -57%/yr while all of uk.wikipedia moved -23%/yr, so the topic is losing ground within the edition, beyond the edition's own trend (share -45%/yr).",
+   "wiki": "uk"
+  },
+  {
+   "absolute": {
+    "ci_high_pct": -3.0233435692297306,
+    "ci_low_pct": -12.216372946695442,
+    "direction": "falling",
+    "growth_ex_spikes_pct_per_year": -8.706009260257153,
+    "growth_pct_per_year": -7.734282417600047,
+    "mann_kendall_p": 0.18863315303694805,
+    "mann_kendall_tau": -0.1956521739130435,
+    "n": 731,
+    "nw_lag": 6,
+    "p_value": 0.0015331951368786623,
+    "p_value_adjusted": 0.18863315303694805,
+    "r2": 0.01752473057603643,
+    "spike_dependent": false,
+    "stderr_kind": "newey-west-hac",
+    "theil_sen_pct_per_year": -5.345903284952769,
+    "yoy_comparable": true,
+    "yoy_pct": -6.074471442095309,
+    "yoy_prior_mean": 17.364383561643837,
+    "yoy_recent_mean": 16.30958904109589
+   },
+   "articles": [
+    {
+     "created_at": "2004-08-05",
+     "qid": "Q329864",
+     "title": "Wehrtechnik",
+     "url": "https://de.wikipedia.org/wiki/Wehrtechnik"
+    }
+   ],
+   "coverage": {
+    "before_create": 0,
+    "completeness": 1,
+    "days": 731,
+    "gaps": 0,
+    "observed": 731,
+    "zero_filled": 0
+   },
+   "events": {
+    "spike_days": 2,
+    "spike_view_share": 0.024130646733831654,
+    "top_spikes": [
+     {
+      "baseline": 12,
+      "date": "2026-06-29",
+      "views": 194,
+      "z": 8.643995415165799
+     },
+     {
+      "baseline": 18,
+      "date": "2026-01-09",
+      "views": 103,
+      "z": 5.426183235556275
+     }
+    ]
+   },
+   "level": {
+    "last90_mean_daily": 16.855555555555554,
+    "last90_per_million": 0.7539469388334038,
+    "mean_daily": 16.837209302325583,
+    "mean_per_million": 0.705676833139943,
+    "median_daily": 16,
+    "total_views": 12308
+   },
+   "project": "de.wikipedia",
+   "project_trend": {
+    "ci_high_pct": -5.671411717580666,
+    "ci_low_pct": -8.301994323190998,
+    "direction": "falling",
+    "growth_ex_spikes_pct_per_year": -6.996003183698241,
+    "growth_pct_per_year": -6.996003183698241,
+    "mann_kendall_p": 0.00014759962823851502,
+    "mann_kendall_tau": -0.5579710144927537,
+    "n": 731,
+    "nw_lag": 6,
+    "p_value": 0,
+    "r2": 0.3133385688674889,
+    "spike_dependent": false,
+    "stderr_kind": "newey-west-hac",
+    "theil_sen_pct_per_year": -7.4169931633714885,
+    "yoy_comparable": true,
+    "yoy_pct": -7.336559198443615,
+    "yoy_prior_mean": 24938416.32328767,
+    "yoy_recent_mean": 23108794.646575343
+   },
+   "reliability": {
+    "grade": "B",
+    "reasons": [
+     "low volume (17 views/day): percentage changes are unstable at this scale",
+     "the 95% confidence interval spans zero (-8% to 2% per year): the direction itself is uncertain"
+    ],
+    "score": 0.6000000000000001
+   },
+   "seasonality": {
+    "annual_amplitude": 1.3963242081419063,
+    "annual_consistency": 0.37409921407663804,
+    "confidence": "low",
+    "has_annual": true,
+    "monthly_index": [
+     1.130450590777621,
+     1.0672318452404703,
+     1.1914629257744813,
+     1.0049758779171325,
+     0.9764371040264858,
+     0.8734043625218382,
+     0.8532853035327415,
+     0.9296671945138874,
+     0.9748209671636325,
+     1.0555669960590761,
+     1.003217438287073,
+     0.9394793941855591
+    ],
+    "school_pattern": false,
+    "weekly_amplitude": 1.439278331644202,
+    "years_covered": 2.001368925393566
+   },
+   "share": {
+    "ci_high_pct": 2.4001292863144785,
+    "ci_low_pct": -8.14206898168377,
+    "direction": "flat",
+    "growth_ex_spikes_pct_per_year": -4.032974304306802,
+    "growth_pct_per_year": -3.0141040550279885,
+    "mann_kendall_p": 0.8233490121001952,
+    "mann_kendall_tau": 0.036231884057971016,
+    "n": 731,
+    "nw_lag": 6,
+    "p_value": 0.26948841426775916,
+    "p_value_adjusted": 0.8233490121001953,
+    "r2": 0.0024402490198000004,
+    "spike_dependent": false,
+    "stderr_kind": "newey-west-hac",
+    "theil_sen_pct_per_year": 1.0969623097535575,
+    "yoy_comparable": true,
+    "yoy_pct": 1.290386426486756,
+    "yoy_prior_mean": 0.7012252785031593,
+    "yoy_recent_mean": 0.710273794316058
+   },
+   "status": "ok",
+   "verdict": "Interest is essentially flat (-3%/yr in share of the wiki's pageviews, confidence interval spans zero). Aligned year-over-year: +1%. Baseline 17 views/day (0.8 per million pageviews). Reliability B. Against its own edition: absolute views -8%/yr while all of de.wikipedia moved -7%/yr, so the topic moves roughly with the edition (share -3%/yr).",
+   "wiki": "de"
+  },
+  {
+   "absolute": {
+    "ci_high_pct": -46.734891772404,
+    "ci_low_pct": -57.613582199167766,
+    "direction": "falling",
+    "growth_ex_spikes_pct_per_year": -52.48455901981514,
+    "growth_pct_per_year": -52.48455901981514,
+    "mann_kendall_p": 1.0053898158446373e-8,
+    "mann_kendall_tau": -0.8405797101449275,
+    "n": 731,
+    "nw_lag": 6,
+    "p_value": 0,
+    "p_value_adjusted": 1.508084723766956e-8,
+    "r2": 0.3830393782884369,
+    "spike_dependent": false,
+    "stderr_kind": "newey-west-hac",
+    "theil_sen_pct_per_year": -48.854362750706834,
+    "yoy_comparable": true,
+    "yoy_pct": -56.629441624365484,
+    "yoy_prior_mean": 13.493150684931507,
+    "yoy_recent_mean": 5.852054794520548
+   },
+   "articles": [
+    {
+     "created_at": "2011-03-05",
+     "qid": "Q329864",
+     "title": "Tecnología militar",
+     "url": "https://es.wikipedia.org/wiki/Tecnolog%C3%ADa_militar"
+    }
+   ],
+   "coverage": {
+    "before_create": 0,
+    "completeness": 1,
+    "days": 731,
+    "gaps": 0,
+    "observed": 731,
+    "zero_filled": 0
+   },
+   "events": {
+    "level_shifts": [
+     {
+      "after": 0,
+      "before": 0,
+      "date": "2026-02-10",
+      "ratio_pct": 54.5586223596485
+     }
+    ],
+    "spike_days": 0,
+    "spike_view_share": 0
+   },
+   "level": {
+    "last90_mean_daily": 3.966666666666667,
+    "last90_per_million": 0.24252939317298766,
+    "mean_daily": 9.744186046511627,
+    "mean_per_million": 0.46019005280053643,
+    "median_daily": 7,
+    "total_views": 7123
+   },
+   "project": "es.wikipedia",
+   "project_trend": {
+    "ci_high_pct": -18.837221939859937,
+    "ci_low_pct": -21.237391949475036,
+    "direction": "falling",
+    "growth_ex_spikes_pct_per_year": -20.046312926528785,
+    "growth_pct_per_year": -20.046312926528785,
+    "mann_kendall_p": 3.061757958278122e-9,
+    "mann_kendall_tau": -0.8695652173913043,
+    "n": 731,
+    "nw_lag": 6,
+    "p_value": 0,
+    "r2": 0.8031850807575814,
+    "spike_dependent": false,
+    "stderr_kind": "newey-west-hac",
+    "theil_sen_pct_per_year": -19.677672179558094,
+    "yoy_comparable": true,
+    "yoy_pct": -20.672965202512927,
+    "yoy_prior_mean": 22304220.512328766,
+    "yoy_recent_mean": 17693276.76712329
+   },
+   "reliability": {
+    "blockers": [
+     "only 9.7 views/day on average (floor is 10): day-to-day counts at this level are dominated by noise, and a % change is not measurable"
+    ],
+    "grade": "D",
+    "reasons": [
+     "low volume (10 views/day): percentage changes are unstable at this scale",
+     "es.wikipedia's overall traffic itself moved -20%/yr in this window",
+     "a persistent 55% level shift around 2026-02-10 remains after trend and seasonality: check the article history for a page move, merge or redirect change before reading this as demand"
+    ],
+    "score": 0
+   },
+   "seasonality": {
+    "annual_amplitude": 2.2200852918169947,
+    "annual_consistency": 0.7762620418441744,
+    "confidence": "low",
+    "has_annual": true,
+    "monthly_index": [
+     0.9773618966952317,
+     1.3211964735139352,
+     1.2512799233613787,
+     0.9586625448358121,
+     1.1220207760299314,
+     0.8713161856106139,
+     0.595110682631757,
+     0.856708747381393,
+     1.1537072787078264,
+     1.1892873081485915,
+     0.9786220368172841,
+     0.7247261462662455
+    ],
+    "school_pattern": false,
+    "weekly_amplitude": 1.8738122386925125,
+    "years_covered": 2.001368925393566
+   },
+   "share": {
+    "ci_high_pct": -35.7129436675593,
+    "ci_low_pct": -49.99056817224399,
+    "direction": "falling",
+    "growth_ex_spikes_pct_per_year": -43.29939011735144,
+    "growth_pct_per_year": -43.29939011735144,
+    "mann_kendall_p": 0.000011315309361270565,
+    "mann_kendall_tau": -0.644927536231884,
+    "n": 731,
+    "nw_lag": 6,
+    "p_value": 0,
+    "p_value_adjusted": 0.000016972964041905847,
+    "r2": 0.2530516983212019,
+    "spike_dependent": false,
+    "stderr_kind": "newey-west-hac",
+    "theil_sen_pct_per_year": -38.748902301422994,
+    "yoy_comparable": true,
+    "yoy_pct": -43.16099131536909,
+    "yoy_prior_mean": 0.5834745743900136,
+    "yoy_recent_mean": 0.3316411640101531
+   },
+   "status": "ok",
+   "verdict": "Not measurable: only 9.7 views/day on average (floor is 10): day-to-day counts at this level are dominated by noise, and a % change is not measurable. Treat this edition as unmeasured, not as flat — the point estimate below is reported for context only and must not be quoted as a growth rate.",
+   "wiki": "es"
+  },
+  {
+   "absolute": {
+    "ci_high_pct": -8.08994175887985,
+    "ci_low_pct": -22.62356521847748,
+    "direction": "falling",
+    "growth_ex_spikes_pct_per_year": -15.669266413365236,
+    "growth_pct_per_year": -15.669266413365236,
+    "mann_kendall_p": null,
+    "mann_kendall_tau": null,
+    "n": 522,
+    "nw_lag": 5,
+    "p_value": 0.00010394879620045927,
+    "r2": 0.030736728426106086,
+    "spike_dependent": false,
+    "stderr_kind": "newey-west-hac",
+    "theil_sen_pct_per_year": null,
+    "yoy_comparable": true,
+    "yoy_pct": -35.99033816425121,
+    "yoy_prior_mean": 1.1342465753424658,
+    "yoy_recent_mean": 0.726027397260274
+   },
+   "articles": [
+    {
+     "created_at": "2012-11-01",
+     "qid": "Q329864",
+     "title": "Tecnologia ed equipaggiamento militare",
+     "url": "https://it.wikipedia.org/wiki/Tecnologia_ed_equipaggiamento_militare"
+    }
+   ],
+   "coverage": {
+    "before_create": 0,
+    "completeness": 1,
+    "days": 731,
+    "gaps": 0,
+    "observed": 659,
+    "zero_filled": 72
+   },
+   "events": {
+    "level_shifts": [
+     {
+      "after": 0,
+      "before": 0,
+      "date": "2025-01-05",
+      "ratio_pct": 44.438840392626666
+     }
+    ],
+    "spike_days": 0,
+    "spike_view_share": 0
+   },
+   "level": {
+    "last90_mean_daily": 0.4777777777777778,
+    "last90_per_million": 0.039449347903844544,
+    "mean_daily": 0.9288645690834473,
+    "mean_per_million": 0.0680587957927782,
+    "median_daily": 1,
+    "total_views": 679
+   },
+   "project": "it.wikipedia",
+   "project_trend": {
+    "ci_high_pct": -10.921296647849143,
+    "ci_low_pct": -13.533249557977435,
+    "direction": "falling",
+    "growth_ex_spikes_pct_per_year": -12.236989497571438,
+    "growth_pct_per_year": -12.236989497571438,
+    "mann_kendall_p": 2.8287791442593857e-7,
+    "mann_kendall_tau": -0.7536231884057971,
+    "n": 731,
+    "nw_lag": 6,
+    "p_value": 0,
+    "r2": 0.5742250165238934,
+    "spike_dependent": false,
+    "stderr_kind": "newey-west-hac",
+    "theil_sen_pct_per_year": -12.267363034566026,
+    "yoy_comparable": true,
+    "yoy_pct": -13.211710704399026,
+    "yoy_prior_mean": 14403740.794520548,
+    "yoy_recent_mean": 12500760.230136987
+   },
+   "reliability": {
+    "blockers": [
+     "only 0.9 views/day on average (floor is 10): day-to-day counts at this level are dominated by noise, and a % change is not measurable"
+    ],
+    "grade": "D",
+    "reasons": [
+     "low volume (1 views/day): percentage changes are unstable at this scale",
+     "a persistent 44% level shift around 2025-01-05 remains after trend and seasonality: check the article history for a page move, merge or redirect change before reading this as demand"
+    ],
+    "score": 0
+   },
+   "seasonality": {
+    "annual_amplitude": 0,
+    "annual_consistency": 0,
+    "confidence": "none",
+    "has_annual": false,
+    "monthly_index": [
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "school_pattern": false,
+    "weekly_amplitude": null,
+    "years_covered": 2.001368925393566
+   },
+   "share": {
+    "ci_high_pct": -4.798575143028961,
+    "ci_low_pct": -19.03918999461036,
+    "direction": "falling",
+    "growth_ex_spikes_pct_per_year": -12.207150233702912,
+    "growth_pct_per_year": -12.207150233702912,
+    "mann_kendall_p": null,
+    "mann_kendall_tau": null,
+    "n": 522,
+    "nw_lag": 5,
+    "p_value": 0.0016343697115654976,
+    "r2": 0.018898468133086266,
+    "spike_dependent": false,
+    "stderr_kind": "newey-west-hac",
+    "theil_sen_pct_per_year": null,
+    "yoy_comparable": true,
+    "yoy_pct": -25.775092086450925,
+    "yoy_prior_mean": 0.07823453929297962,
+    "yoy_recent_mean": 0.05806951474680349
+   },
+   "status": "ok",
+   "verdict": "Not measurable: only 0.9 views/day on average (floor is 10): day-to-day counts at this level are dominated by noise, and a % change is not measurable. Treat this edition as unmeasured, not as flat — the point estimate below is reported for context only and must not be quoted as a growth rate.",
+   "wiki": "it"
+  }
+ ],
+ "window": {
+  "end": "2026-09-22",
+  "granularity": "daily",
+  "start": "2024-09-22"
+ }
+}

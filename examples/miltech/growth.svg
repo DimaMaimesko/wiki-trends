@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 170" width="920" height="170" role="img">
+<rect x="0.00" y="0.00" width="920.00" height="170.00" fill="#ffffff" stroke="none" stroke-width="0.00"/>
+<text x="10.00" y="15.00" font-family="Helvetica, Arial, sans-serif" font-size="10.50" font-weight="700" fill="#1a1a1a" text-anchor="start">Growth in attention share, % per year</text>
+<text x="10.00" y="37.80" font-family="Helvetica, Arial, sans-serif" font-size="8.00" font-weight="700" fill="#1a1a1a" text-anchor="start">cs</text>
+<text x="319.67" y="37.80" font-family="Helvetica, Arial, sans-serif" font-size="7.50" font-weight="400" fill="#6b7280" text-anchor="start">not measurable</text>
+<text x="910.00" y="37.80" font-family="Helvetica, Arial, sans-serif" font-size="7.50" font-weight="400" fill="#6b7280" text-anchor="end">only 1.2 views/day on average (floor is 10): day-to-day counts at this level are dominated…</text>
+<text x="10.00" y="63.80" font-family="Helvetica, Arial, sans-serif" font-size="8.00" font-weight="700" fill="#1a1a1a" text-anchor="start">uk</text>
+<rect x="27.34" y="55.50" width="288.33" height="11.00" fill="#a6342c" stroke="none" stroke-width="0.00"/>
+<text x="23.34" y="63.80" font-family="Helvetica, Arial, sans-serif" font-size="7.50" font-weight="400" fill="#1a1a1a" text-anchor="end">-45%</text>
+<text x="910.00" y="63.80" font-family="Helvetica, Arial, sans-serif" font-size="7.50" font-weight="400" fill="#6b7280" text-anchor="end">CI -48%..-41% · adj p &lt;0.001 · grade B</text>
+<text x="10.00" y="89.80" font-family="Helvetica, Arial, sans-serif" font-size="8.00" font-weight="700" fill="#1a1a1a" text-anchor="start">de</text>
+<rect x="296.24" y="81.50" width="19.43" height="11.00" fill="#6b7280" stroke="none" stroke-width="0.00"/>
+<text x="292.24" y="89.80" font-family="Helvetica, Arial, sans-serif" font-size="7.50" font-weight="400" fill="#1a1a1a" text-anchor="end">-3%</text>
+<text x="910.00" y="89.80" font-family="Helvetica, Arial, sans-serif" font-size="7.50" font-weight="400" fill="#6b7280" text-anchor="end">CI -8%..+2% · adj p 0.823 · grade B</text>
+<text x="10.00" y="115.80" font-family="Helvetica, Arial, sans-serif" font-size="8.00" font-weight="700" fill="#1a1a1a" text-anchor="start">es</text>
+<text x="319.67" y="115.80" font-family="Helvetica, Arial, sans-serif" font-size="7.50" font-weight="400" fill="#6b7280" text-anchor="start">not measurable</text>
+<text x="910.00" y="115.80" font-family="Helvetica, Arial, sans-serif" font-size="7.50" font-weight="400" fill="#6b7280" text-anchor="end">only 9.7 views/day on average (floor is 10): day-to-day counts at this level are dominated…</text>
+<text x="10.00" y="141.80" font-family="Helvetica, Arial, sans-serif" font-size="8.00" font-weight="700" fill="#1a1a1a" text-anchor="start">it</text>
+<text x="319.67" y="141.80" font-family="Helvetica, Arial, sans-serif" font-size="7.50" font-weight="400" fill="#6b7280" text-anchor="start">not measurable</text>
+<text x="910.00" y="141.80" font-family="Helvetica, Arial, sans-serif" font-size="7.50" font-weight="400" fill="#6b7280" text-anchor="end">only 0.9 views/day on average (floor is 10): day-to-day counts at this level are dominated…</text>
+<line x1="315.67" y1="22.00" x2="315.67" y2="152.00" stroke="#9aa2ab" stroke-width="0.70"/>
+</svg>

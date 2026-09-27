@@ -5,3 +5,7 @@
 /wikitrends-runs/
 /.cache/
 ROADMAP.md
+
+# Editor and OS files
+.DS_Store
+.idea/

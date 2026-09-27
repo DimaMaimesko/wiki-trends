@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 92" width="920" height="92" role="img">
+<rect x="0.00" y="0.00" width="920.00" height="92.00" fill="#ffffff" stroke="none" stroke-width="0.00"/>
+<text x="10.00" y="15.00" font-family="Helvetica, Arial, sans-serif" font-size="10.50" font-weight="700" fill="#1a1a1a" text-anchor="start">Growth in attention share, % per year</text>
+<text x="10.00" y="37.80" font-family="Helvetica, Arial, sans-serif" font-size="8.00" font-weight="700" fill="#1a1a1a" text-anchor="start">cs</text>
+<text x="30.90" y="37.80" font-family="Helvetica, Arial, sans-serif" font-size="7.50" font-weight="400" fill="#6b7280" text-anchor="start">not measurable</text>
+<text x="910.00" y="37.80" font-family="Helvetica, Arial, sans-serif" font-size="7.50" font-weight="400" fill="#6b7280" text-anchor="end">only 9.2 views/day on average (floor is 10): day-to-day counts at this level are dominated…</text>
+<text x="10.00" y="63.80" font-family="Helvetica, Arial, sans-serif" font-size="8.00" font-weight="700" fill="#1a1a1a" text-anchor="start">pl</text>
+<text x="30.90" y="63.80" font-family="Helvetica, Arial, sans-serif" font-size="7.50" font-weight="400" fill="#6b7280" text-anchor="start">not measurable</text>
+<text x="910.00" y="63.80" font-family="Helvetica, Arial, sans-serif" font-size="7.50" font-weight="400" fill="#6b7280" text-anchor="end">only 8.0 views/day on average (floor is 10): day-to-day counts at this level are dominated…</text>
+<line x1="26.90" y1="22.00" x2="26.90" y2="74.00" stroke="#9aa2ab" stroke-width="0.70"/>
+</svg>
